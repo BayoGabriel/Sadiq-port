@@ -1,15 +1,14 @@
-import Full_Text from "../../components/Full_Text";
+import Sub_Footer from "../../components/Sub_Footer";
+import Home_Hero from "./home_view_components/Home_Hero";
+import Home_Trusted from "./home_view_components/Home_Trusted";
 
 const Home_View = () => {
   return (
-    <section className="py-20 bg-page">
-      <div className="containerclass">
-        <Full_Text
-          containerStyle="flex-col justify-center items-center"
-          tag={{ style: "font-medium text-sm", text: "+20 products launched" }}
-        />
-      </div>
-    </section>
+    <>
+      <Home_Hero />
+      <Home_Trusted />
+      <Sub_Footer />
+    </>
   );
 };
 

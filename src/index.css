@@ -6,10 +6,19 @@
   --color-bd: #cedadd80;
   --color-prigray: #4d5253;
   --color-bd2: #5e67691a;
+  --color-gradient1: #333c3f;
+  --color-gradient2: #1b1f20;
+  --color-bdmain: #cedadd;
+  --color-secgray: #98a6aa;
+  --color-darkgray: #82888c;
 }
 
 @layer components {
   .containerclass {
     @apply w-[90%] mx-auto max-w-300;
   }
+}
+
+body {
+  background-color: #edf4f5;
 }

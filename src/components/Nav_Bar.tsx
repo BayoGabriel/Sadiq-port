@@ -10,7 +10,7 @@ const Nav_Bar = () => {
     },
     {
       name: "Work",
-      link: "/",
+      link: "/work",
     },
     {
       name: "Services",
@@ -18,7 +18,7 @@ const Nav_Bar = () => {
     },
     {
       name: "About",
-      link: "/",
+      link: "/about",
     },
     {
       name: "Careers",
