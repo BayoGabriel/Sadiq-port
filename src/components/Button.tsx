@@ -1,27 +1,12 @@
-interface IBtn {
-  text: string;
-  style: string;
-  color?: string;
-}
+import Direction from "../assets/svgs/Direction";
+import type { IBtn } from "../types/types";
 
-const Button = ({ text, style, color = "#101213" }: IBtn) => {
+const Button = ({ text, style, color, show_icon = true }: IBtn) => {
   return (
     <button
-      className={`flex gap-4 px-4 py-2 items-center rounded-full text-sm font-medium ${style}`}
+      className={`flex gap-4 px-4 py-3 items-center rounded-full text-sm font-medium ${style}`}
     >
-      {text}{" "}
-      <svg
-        width="12"
-        height="12"
-        viewBox="0 0 12 12"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12 0.666646V9.33305C12 9.50985 11.9298 9.67941 11.8047 9.80444C11.6797 9.92946 11.5102 9.99969 11.3334 9.99969C11.1565 9.99969 10.987 9.92946 10.862 9.80444C10.7369 9.67941 10.6667 9.50985 10.6667 9.33305V2.27576L1.13867 11.8046C1.01358 11.9297 0.843921 12 0.667017 12C0.490113 12 0.320455 11.9297 0.195365 11.8046C0.0702747 11.6795 0 11.5099 0 11.333C0 11.1561 0.0702747 10.9864 0.195365 10.8613L9.72424 1.33329H2.66695C2.49015 1.33329 2.32059 1.26306 2.19556 1.13804C2.07054 1.01302 2.00031 0.843452 2.00031 0.666646C2.00031 0.489841 2.07054 0.320277 2.19556 0.195256C2.32059 0.0702359 2.49015 0 2.66695 0H11.3334C11.5102 0 11.6797 0.0702359 11.8047 0.195256C11.9298 0.320277 12 0.489841 12 0.666646Z"
-          fill={color}
-        />
-      </svg>
+      {text} {show_icon && <Direction color={color} />}
     </button>
   );
 };
