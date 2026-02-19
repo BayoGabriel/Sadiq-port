@@ -19,7 +19,7 @@ const Service_Second = () => {
         }}
       />
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-4">
-        {[1, 2, 3, 4, 5, 6].map((item, index) => (
+        {[1, 2, 3, 4, 5, 6].map((index) => (
           <div
             className="rounded-xl bg-white px-6 py-8 flex items-center gap-4"
             key={index}

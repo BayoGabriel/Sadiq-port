@@ -20,7 +20,7 @@ const About_Team = () => {
         />
 
         <div className="grid gap-y-8 md:grid-cols-2 lg:grid-cols-4">
-          {[1, 2, 3, 4, 5, 6, 7, 8].map((item, index) => (
+          {[1, 2, 3, 4, 5, 6, 7, 8].map(() => (
             <div>
               <img src={Woman} alt="" />
             </div>
@@ -42,7 +42,7 @@ const About_Team = () => {
           btn={{
             text: "View positions",
             style:
-              "bg-white inear-to-tr from-gradient1 to-gradient2 text-primary mt-8",
+              "bg-white linear-to-tr from-gradient1 to-gradient2 text-primary mt-8",
             show_icon: false,
           }}
         />

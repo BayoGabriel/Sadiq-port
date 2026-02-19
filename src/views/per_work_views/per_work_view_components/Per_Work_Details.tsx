@@ -22,7 +22,7 @@ const Per_Work_Details = () => {
       </div>
 
       <div className="grid md:grid-cols-2 gap-2 mt-2">
-        {[1, 2].map((item, index) => (
+        {[1, 2].map((index) => (
           <div className="bg-white p-1 rounded-xl" key={index}>
             <img src={Phone} alt="" className=" w-full rounded-xl block" />
           </div>

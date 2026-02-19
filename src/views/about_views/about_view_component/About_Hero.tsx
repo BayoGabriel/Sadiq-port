@@ -22,7 +22,7 @@ const About_Hero = () => {
 
       <section className="containerclass grid gap-2 pt-20">
         <div className="flex gap-4">
-          {[1, 2, 3].map((item, index) => (
+          {[1, 2, 3].map(() => (
             <Full_Text
               containerStyle="flex-col bg-white px-8 py-4 rounded-xl flex-1 gap-0"
               header={{
@@ -47,7 +47,7 @@ const About_Hero = () => {
         </div>
 
         <div className="flex gap-4">
-          {[1, 2].map((item, index) => (
+          {[1, 2].map(() => (
             <Full_Text
               containerStyle="flex-col bg-white px-8 py-6 rounded-xl flex-1 gap-4"
               tag={{ text: "Our mission", style: "" }}

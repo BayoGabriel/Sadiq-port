@@ -7,7 +7,7 @@ const About_Second = () => {
       <div className="containerclass">
         <div className="flex justify-between ">
           <div className="grid md:grid-cols-2 gap-8 w-[64%]">
-            {[1, 2, 3, 4].map((item, index) => (
+            {[1, 2, 3, 4].map(() => (
               <div className="grid gap-4">
                 <svg
                   width="40"

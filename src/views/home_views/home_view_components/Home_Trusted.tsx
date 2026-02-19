@@ -15,7 +15,7 @@ const Home_Trusted = () => {
           }}
         />
         <div className="grid gap-6 md:grid-cols-2">
-          {[1, 2, 3, 4, 5, 6].map((item, index) => (
+          {[1, 2, 3, 4, 5, 6].map((index) => (
             <Card_Img key={index} />
           ))}
         </div>

@@ -1,6 +1,6 @@
-import { RectBg } from "../../assets/images";
-import Full_Text from "../../components/Full_Text";
-import Header_Text from "../../components/Header_Text";
+// import { RectBg } from "../../assets/images";
+// import Full_Text from "../../components/Full_Text";
+// import Header_Text from "../../components/Header_Text";
 import Nav_Bar from "../../components/Nav_Bar";
 import Sub_Footer from "../../components/Sub_Footer";
 import Work_Hero from "./work_view_components/Work_Hero";

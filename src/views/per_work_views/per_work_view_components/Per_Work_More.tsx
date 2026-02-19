@@ -15,7 +15,7 @@ const Per_Work_More = () => {
         }}
       />
       <div className="grid gap-6 md:grid-cols-2 mt-12">
-        {[1, 2, 3, 4].map((item, index) => (
+        {[1, 2, 3, 4].map((index) => (
           <Card_Img key={index} />
         ))}
       </div>

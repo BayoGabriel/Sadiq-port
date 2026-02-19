@@ -9,7 +9,7 @@ const Card_Img = () => {
       <div className="p-4 flex flex-col gap-4">
         <Header_Text text="Currency" type="cardhead" style="font-semibold" />
         <div className="flex gap-4">
-          {[1, 2, 3].map((item, index) => (
+          {[1, 2, 3].map((index) => (
             <div
               className="rounded-full px-3 py-1 bg-white border border-bdmain"
               key={index}
