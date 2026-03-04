@@ -21,4 +21,16 @@
 
 body {
   background-color: #edf4f5;
+  font-family: "Inter", sans-serif;
+}
+.video {
+  box-shadow: 9px 15px 39px 0px rgba(27, 31, 32, 0.2);
+
+  box-shadow: 36px 61px 71px 0px rgba(27, 31, 32, 0.17);
+
+  box-shadow: 81px 138px 96px 0px rgba(27, 31, 32, 0.1);
+
+  box-shadow: 144px 245px 114px 0px rgba(27, 31, 32, 0.03);
+
+  box-shadow: 226px 382px 124px 0px rgba(27, 31, 32, 0);
 }

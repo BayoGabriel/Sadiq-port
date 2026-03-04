@@ -2,6 +2,7 @@ import Full_Text from "../../../components/Full_Text";
 import Tool from "../../../assets/svgs/Tool";
 import Code from "../../../assets/svgs/Code";
 import Double_Btn from "../../../components/Double_Btn";
+import { Video } from "../../../assets/images";
 
 const Home_Hero = () => {
   return (
@@ -45,6 +46,11 @@ const Home_Hero = () => {
           }}
           btn2={{ style: "bg-white", text: "See our work", show_icon: false }}
           style="w-fit mt-8"
+        />
+        <img
+          src={Video}
+          alt="video"
+          className="w-full h-auto mt-10 shadow-[0_0_60px_0_rgba(27,31,32,0.2)] rounded-[24px] video"
         />
       </div>
     </section>
