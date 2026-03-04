@@ -41,17 +41,19 @@ const Home_Hero = () => {
         <Double_Btn
           btn1={{
             text: "Let's talk",
-            style: "bg-linear-to-tr from-gradient1 to-gradient2 text-white",
+            style: "bg-linear-to-tr shadow-2xl from-gradient1 to-gradient2 text-white",
             color: "#ffffff",
           }}
-          btn2={{ style: "bg-white", text: "See our work", show_icon: false }}
+          btn2={{ style: "bg-white  shadow-2xl", text: "See our work", show_icon: false }}
           style="w-fit mt-8"
         />
-        <img
-          src={Video}
-          alt="video"
-          className="w-full h-auto mt-10 shadow-[0_0_60px_0_rgba(27,31,32,0.2)] rounded-[24px] video"
-        />
+        <div className="rounded-[24px] shadow-2xl video mt-10 w-[70%] h-auto  mx-auto">
+          <img
+            src={Video}
+            alt="video"
+            className="w-full rounded-[24px]"
+          />
+        </div>
       </div>
     </section>
   );
