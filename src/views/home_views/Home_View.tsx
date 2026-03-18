@@ -5,7 +5,8 @@ import Work from "./home_view_components/Work";
 import Home_Services from "./home_view_components/Home_Services";
 import Home_Reads from "./home_view_components/Home_Reads";
 import Home_Process from "./home_view_components/Home_Process";
-// import Home_Testimonials from "./home_view_components/Home_Testimonials";
+import Home_About from "./home_view_components/Home_About";
+import Home_Testimonials from "./home_view_components/Home_Testimonials";
 
 const Home_View = () => {
   return (
@@ -14,13 +15,12 @@ const Home_View = () => {
 
       <Work />
 
-      
       <Home_Trusted />
-
-      {/* <Home_Testimonials /> */}
-      <Home_Reads />
       <Home_Services />
       <Home_Process />
+      <Home_About />
+      <Home_Testimonials />
+      <Home_Reads />
 
       <Sub_Footer />
     </>
