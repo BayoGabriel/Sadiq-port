@@ -3,7 +3,7 @@ import Full_Text from "../../../components/Full_Text";
 
 const Home_Trusted = () => {
   return (
-    <section className="bg-page py-20">
+    <section className="bg-page py-16 md:py-20">
       <div className="containerclass">
         <Full_Text
           containerStyle="flex-col justify-center items-center"
@@ -11,10 +11,11 @@ const Home_Trusted = () => {
           header={{
             text: "Trusted by startups to scale fast ",
             type: "title",
-            style: "font-semibold max-w-[35rem] text-center leading-[5rem]",
+            style:
+              "font-semibold max-w-[35rem] text-center leading-[3.2rem] md:leading-[5rem]",
           }}
         />
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-6 md:grid-cols-2 mt-8">
           {[1, 2, 3, 4, 5, 6].map((index) => (
             <Card_Img key={index} />
           ))}

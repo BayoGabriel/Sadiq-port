@@ -85,7 +85,7 @@ const Home_Testimonials = () => {
   }, [activeIndex, count, testimonials]);
 
   return (
-    <section className="bg-transparent py-28">
+    <section className="bg-transparent py-20 md:py-28">
       <div className="containerclass">
         <Full_Text
           containerStyle="flex-col justify-center items-center"
@@ -97,24 +97,24 @@ const Home_Testimonials = () => {
           }}
         />
 
-        <div className="relative mx-auto mt-16 md:mt-20">
-          <div className="relative w-full items-center justify-center flex mx-auto h-[320px] md:h-[340px] ">
+        <div className="relative mx-auto mt-12 md:mt-20">
+          <div className="relative w-full items-center justify-center flex mx-auto h-[300px] sm:h-[320px] md:h-[340px]">
             {stack
               .slice()
               .reverse()
               .map(({ t, order, index }) => {
                 const isActive = index === activeIndex;
 
-                  const scale = 1 - order * 0.001;
-                  const translateX = -order * 70;
-                  const translateY = order * 5;
-                  const rotate = -order * 1;
-                  const opacity = order === 3 ? 0.25 : 1;
+                const scale = 1 - order * 0.001;
+                const translateX = -order * 70;
+                const translateY = order * 5;
+                const rotate = -order * 1;
+                const opacity = order === 3 ? 0.25 : 1;
 
                 return (
                   <div
                     key={`${t.name}-${index}`}
-                    className="absolute w-[92%] md:w-[340px] md:h-[210px]"
+                    className="absolute w-[92%] sm:w-[86%] md:w-[340px] md:h-[210px]"
                     style={{
                       transform: `translate(${translateX}px, ${translateY}px) rotate(${rotate}deg) scale(${scale})`,
                       opacity,

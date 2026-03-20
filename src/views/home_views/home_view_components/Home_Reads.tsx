@@ -48,7 +48,7 @@ const Home_Reads = () => {
   ];
 
   return (
-    <section className="bg-page py-20">
+    <section className="bg-page py-16 md:py-20">
       <div className="containerclass">
         <Full_Text
           containerStyle="flex-col justify-center items-center"
@@ -56,15 +56,16 @@ const Home_Reads = () => {
           header={{
             text: "Practical thinking on product, design, and dev",
             type: "title",
-            style: "font-semibold max-w-[48rem] text-center leading-[5rem]",
+            style:
+              "font-semibold max-w-[48rem] text-center leading-[3.2rem] md:leading-[5rem]",
           }}
         />
-        <div className="grid gap-10 mt-10 md:grid-cols-4">
+        <div className="grid gap-10 mt-10 md:grid-cols-2 lg:grid-cols-4">
           {cards.map((card, index) => (
             <article
               key={card.title}
               className={`flex flex-col gap-4 ${
-                index === 0 ? "md:col-span-2" : "md:col-span-1"
+                index === 0 ? "lg:col-span-2" : "lg:col-span-1"
               }`}
             >
               <img

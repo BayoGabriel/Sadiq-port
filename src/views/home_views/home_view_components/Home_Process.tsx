@@ -111,9 +111,9 @@ const Home_Process = () => {
   const brightLinePx = totalLinePx * progress;
 
   return (
-    <section className="bg-primary py-28">
+    <section className="bg-primary py-20 md:py-28">
       <div className="containerclass">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_520px] gap-14 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_520px] gap-12 lg:gap-14 items-start">
           <div>
             <div className="bg-[#181C1D] text-white border border-[#282E30] rounded-full px-4 py-2 w-fit text-sm font-medium">
               PROCESS
@@ -127,8 +127,11 @@ const Home_Process = () => {
             </p>
           </div>
         </div>
-        <div className="flex justify-end w-full">
-          <div ref={timelineRef} className="relative lg:w-[40%] mt-20">
+        <div className="flex justify-start lg:justify-end w-full mt-12 lg:mt-0">
+          <div
+            ref={timelineRef}
+            className="relative w-full sm:w-[92%] md:w-[70%] lg:w-[40%]"
+          >
             <div
               className="absolute left-[35px] w-[2px]"
               style={{
@@ -150,7 +153,7 @@ const Home_Process = () => {
               aria-hidden
             />
 
-            <div className="flex flex-col gap-40">
+            <div className="flex flex-col gap-16 md:gap-28 lg:gap-40">
               {steps.map((step, idx) => {
                 const y = circleYs[idx] ?? 0;
                 const progressY = lineStartY + totalLinePx * progress;
@@ -159,7 +162,7 @@ const Home_Process = () => {
                 return (
                   <div
                     key={step.title}
-                    className="grid grid-cols-[70px_1fr] gap-5"
+                    className="grid grid-cols-[70px_1fr] gap-4 md:gap-5"
                   >
                     <div className="relative flex justify-center">
                       <div

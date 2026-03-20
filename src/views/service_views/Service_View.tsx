@@ -4,11 +4,16 @@ import Service_Hero from "./service_views_components/Service_Hero";
 import Service_Second from "./service_views_components/Service_Second";
 import Service_Trusted from "./service_views_components/Service_Trusted";
 
-const Service_View = () => {
+type ServiceViewProps = {
+  title?: string;
+  description?: string;
+};
+
+const Service_View = ({ title, description }: ServiceViewProps) => {
   return (
     <>
       <Nav_Bar />
-      <Service_Hero />
+      <Service_Hero title={title} description={description} />
       <Service_Second />
       <Service_Trusted />
       <Sub_Footer />

@@ -1,19 +1,27 @@
 import { Phone } from "../../../assets/images";
 import Full_Text from "../../../components/Full_Text";
 
-const Service_Hero = () => {
+type ServiceHeroProps = {
+  title?: string;
+  description?: string;
+};
+
+const Service_Hero = ({
+  title = "Mobile development",
+  description = "Mobile apps built for speed and scale.",
+}: ServiceHeroProps) => {
   return (
     <section className="containerclass py-20">
       <Full_Text
         containerStyle="flex-col justify-center items-center mb-10"
         tag={{ text: "Services", style: "mx-auto" }}
         header={{
-          text: "Mobile development",
+          text: title,
           type: "subhead",
           style: "font-semibold max-w-[35rem] text-center leading-[5rem]",
         }}
         para={{
-          text: "Mobile apps built for speed and scale.",
+          text: description,
           style: "max-w-[40rem]",
         }}
       />

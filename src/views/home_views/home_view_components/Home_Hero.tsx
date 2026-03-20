@@ -6,7 +6,7 @@ import { Video } from "../../../assets/images";
 
 const Home_Hero = () => {
   return (
-    <section className="py-20 bg-page">
+    <section className="py-16 md:py-20 bg-page">
       <div className="containerclass">
         <Full_Text
           containerStyle="flex-col justify-center items-center gap-4"
@@ -16,14 +16,14 @@ const Home_Hero = () => {
             type: "title",
             extra: (
               <>
-                <span className="flex items-center gap-6">
+                <span className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
                   <span>We design</span>
                   <span className="h-12 w-12 items-center -ml-4">
                     <Tool />
                   </span>
                   <span>and build</span>
                 </span>
-                <span className="flex gap-2 items-center mx-auto justify-center">
+                <span className="flex flex-wrap gap-2 items-center mx-auto justify-center">
                   <span className="">digital products </span>{" "}
                   <span className="w-16 h-12 ">
                     <Code />
@@ -31,7 +31,7 @@ const Home_Hero = () => {
                 </span>
               </>
             ),
-            style: "font-semibold leading-[5rem]",
+            style: "font-semibold leading-[3.2rem] md:leading-[5rem]",
           }}
           para={{
             text: "From strategy to shipping, we partner with startups and tech teams to create scalable, user-driven products — fast, and future-ready.",
@@ -52,7 +52,7 @@ const Home_Hero = () => {
           }}
           style="w-fit mt-8"
         />
-        <div className="rounded-[24px] shadow-2xl video mt-10 w-[70%] h-auto  mx-auto">
+        <div className="rounded-[24px] shadow-2xl video mt-10 w-full md:w-[70%] h-auto mx-auto">
           <img src={Video} alt="video" className="w-full rounded-[24px]" />
         </div>
       </div>

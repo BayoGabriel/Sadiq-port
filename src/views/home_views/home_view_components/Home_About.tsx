@@ -2,7 +2,7 @@ import { Woman } from "../../../assets/images";
 
 const Home_About = () => {
   return (
-    <section className="bg-page py-28">
+    <section className="bg-page py-20 md:py-28">
       <div className="containerclass">
         <div className="flex flex-col items-center text-center">
           <div className="bg-white border border-bd2 rounded-full px-4 py-2 w-fit text-sm font-medium text-primary">
@@ -44,14 +44,13 @@ const Home_About = () => {
 
         <div className="mt-6 grid gap-6 lg:grid-cols-[1.2fr_0.8fr] items-stretch">
           <div className="bg-white border border-bd2 rounded-[24px] px-10 flex flex-col justify-between py-10">
-            <p className="text-primary text-2xl md:text-3xl font-semibold leading-10 md:leading-[2.75rem]">
-              <span className="text-secgray">“I started De-Synexia after years of working with</span>{" "}
-              startups{" "}
+            <p className="text-primary text-xl sm:text-2xl md:text-3xl font-semibold leading-8 sm:leading-10 md:leading-[2.75rem]">
               <span className="text-secgray">
-                who needed more than just
+                “I started De-Synexia after years of working with
               </span>{" "}
-              design{" "}
-              <span className="text-secgray">or</span> code,
+              startups{" "}
+              <span className="text-secgray">who needed more than just</span>{" "}
+              design <span className="text-secgray">or</span> code,
               <span className="text-secgray">
                 {" "}
                 they needed a real partner. Someone who could
@@ -65,7 +64,11 @@ const Home_About = () => {
 
             <div className="flex items-center gap-4">
               <div className="h-12 w-12 rounded-full bg-black overflow-hidden">
-                <img src={Woman} alt="" className="h-full w-full object-cover" />
+                <img
+                  src={Woman}
+                  alt=""
+                  className="h-full w-full object-cover"
+                />
               </div>
               <div className="flex flex-col">
                 <p className="text-primary font-semibold text-sm">
@@ -97,7 +100,9 @@ const Home_About = () => {
           <div className="bg-white border border-bd2 rounded-[24px] px-10 py-10">
             <p className="text-primary text-5xl font-semibold">15+</p>
             <p className="text-primary font-semibold mt-4">Industries</p>
-            <p className="text-secgray mt-1">served — from fintech to health to AI</p>
+            <p className="text-secgray mt-1">
+              served — from fintech to health to AI
+            </p>
           </div>
         </div>
       </div>

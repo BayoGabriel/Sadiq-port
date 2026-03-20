@@ -3,7 +3,7 @@ import Full_Text from "./Full_Text";
 
 const Sub_Footer = () => {
   return (
-    <section className="bg-white py-28 relative">
+    <section className="bg-white py-20 md:py-28 relative">
       <div className="absolute inset-0 h-full w-full">
         <img src={RectBg} alt="" className="w-full h-full" />
       </div>
@@ -13,7 +13,8 @@ const Sub_Footer = () => {
           header={{
             text: "Let's build ",
             type: "subhead",
-            style: "leading-[5rem] text-center font-semibold",
+            style:
+              "leading-[3.2rem] md:leading-[5rem] text-center font-semibold",
             extra: (
               <>
                 <span className="block text-secgray -mt-8">something real</span>

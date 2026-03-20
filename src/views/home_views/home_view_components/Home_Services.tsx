@@ -227,24 +227,22 @@ const Home_Services = () => {
     };
   }, [items.length]);
 
- 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-page py-16 md:py-20">
       <div className="containerclass">
-        <Full_Text
-          containerStyle="flex-col justify-center items-center"
-          tag={{ text: "SERVICES", style: "mx-auto" }}
-          header={{
-            text: "Product development for startups & tech teams ",
-            type: "title",
-            style: "font-semibold max-w-[45rem] text-center leading-[5rem]",
-          }}
-          para={{
-            text: "We combine strategy, design, and engineering into one agile workflow."
-            
-          }}
-        />
-        <div className="relative overflow-hidden border-y border-bd2">
+        <div className="relative overflow-hidden rounded-[24px] bg-white border border-bd2">
+          <Full_Text
+            containerStyle="flex-col justify-center items-center"
+            tag={{ text: "SERVICES", style: "mx-auto" }}
+            header={{
+              text: "Product development for startups & tech teams ",
+              type: "title",
+              style: "font-semibold max-w-[45rem] text-center leading-[5rem]",
+            }}
+            para={{
+              text: "We combine strategy, design, and engineering into one agile workflow.",
+            }}
+          />
           <div className="divide-y divide-bd2">
             {items.map((item, index) => {
               const isActive = index === activeIndex;
@@ -264,7 +262,7 @@ const Home_Services = () => {
                   }}
                   className="w-full text-left"
                 >
-                  <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-6 px-6 md:px-10 py-8">
+                  <div className="grid grid-cols-1 md:grid-cols-[380px_1fr] items-center gap-5 md:gap-6 px-5 md:px-10 py-7 md:py-8">
                     <div className="flex items-center gap-5">
                       <IconBox visible={iconVisible}>{item.icon}</IconBox>
 
@@ -274,7 +272,7 @@ const Home_Services = () => {
                         }`}
                       >
                         <p
-                          className={`text-2xl md:text-3xl leading-tight transition-all duration-300 ${
+                          className={`text-xl sm:text-2xl md:text-3xl leading-tight transition-all duration-300 ${
                             isActive ? "font-semibold" : "font-medium"
                           }`}
                         >
