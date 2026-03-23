@@ -1,4 +1,4 @@
-import { Woman } from "../../../assets/images";
+import { Sadiq } from "../../../assets/images";
 
 const Home_About = () => {
   return (
@@ -65,7 +65,7 @@ const Home_About = () => {
             <div className="flex items-center gap-4">
               <div className="h-12 w-12 rounded-full bg-black overflow-hidden">
                 <img
-                  src={Woman}
+                  src={Sadiq}
                   alt=""
                   className="h-full w-full object-cover"
                 />
@@ -80,7 +80,7 @@ const Home_About = () => {
           </div>
 
           <div className="bg-white border border-bd2 rounded-[24px] overflow-hidden">
-            <img src={Woman} alt="" className="h-full w-full object-cover" />
+            <img src={Sadiq} alt="" className="h-full w-full object-cover" />
           </div>
         </div>
 

@@ -228,7 +228,7 @@ const Home_Services = () => {
   }, [items.length]);
 
   return (
-    <section className="bg-page py-16 md:py-20">
+    <section className="bg-white  py-16 md:py-20">
       <div className="containerclass">
         <div className="relative overflow-hidden rounded-[24px] bg-white border border-bd2">
           <Full_Text

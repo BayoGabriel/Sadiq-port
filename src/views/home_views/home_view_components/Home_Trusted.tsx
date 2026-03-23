@@ -1,7 +1,40 @@
+import { Bravoo_App, Bravoo_Web, Phone,  Loda, Currencys, Ecom } from "../../../assets/images";
 import Card_Img from "../../../components/Card_Img";
 import Full_Text from "../../../components/Full_Text";
 
 const Home_Trusted = () => {
+  const jobs = [
+    {
+      title: "Currencys",
+      tags: ["Mobile app", "UI/UX design"],
+      image: Phone,
+    },
+    {
+      title: "Bravoo",
+      tags: ["Website", "UI/UX design"],
+      image: Bravoo_Web,
+    },
+    {
+      title: "Bravoo",
+      tags: ["Mobile app", "UI/UX design", "MVP"],
+      image: Bravoo_App,
+    },
+    {
+      title: "Loda Point",
+      tags: ["Mobile app", "UI/UX design", "MVP"],
+      image: Loda,
+    },
+    {
+      title: "Currencys",
+      tags: ["Website", "UI/UX design"],
+      image: Currencys,
+    },
+    {
+      title: "E-Commerce",
+      tags: ["Marketing", "UI/UX design"],
+      image: Ecom,
+    },
+  ];
   return (
     <section className="bg-page py-16 md:py-20">
       <div className="containerclass">
@@ -16,8 +49,8 @@ const Home_Trusted = () => {
           }}
         />
         <div className="grid gap-6 md:grid-cols-2 mt-8">
-          {[1, 2, 3, 4, 5, 6].map((index) => (
-            <Card_Img key={index} />
+          {jobs.map((job, index) => (
+            <Card_Img key={index} {...job} />
           ))}
         </div>
       </div>

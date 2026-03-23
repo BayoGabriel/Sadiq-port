@@ -5,15 +5,17 @@ import Paragraph from "./Paragraph";
 type CardImgProps = {
   title?: string;
   tags?: string[];
+  image?: string;
 };
 
 const Card_Img = ({
   title = "Currency",
   tags = ["Mobile app", "Mobile app", "Mobile app"],
+  image = Phone,
 }: CardImgProps) => {
   return (
     <div className="bg-white p-2 rounded-xl">
-      <img src={Phone} alt="phone" />
+      <img src={image} alt="phone" className="w-full rounded-[12px]" />
       <div className="p-4 flex flex-col gap-4">
         <Header_Text text={title} type="cardhead" style="font-semibold" />
         <div className="flex gap-4">
