@@ -23,7 +23,7 @@ const About_Team = () => {
     },
     {
       name: "Gabriel",
-      position: "Software Engineer/Infra/Devops",
+      position: "Software Engineer & Infra/Devops",
       image: Gabriel,
     },
   ];
@@ -69,15 +69,18 @@ const About_Team = () => {
                       : "opacity-0 group-hover:opacity-100"
                   }`}
                 >
-                  <p className="text-sm font-medium">
-                    {member.position}
-                  </p>
+                  <p className="text-sm font-medium">{member.position}</p>
                 </div>
               </div>
 
-              <p className="mt-3 font-semibold text-center">
-                {member.name}
-              </p>
+              <div className="flex mt-3 items-center justify-between">
+                {/* <p className="font-semibold text-center">{member.name}</p> */}
+                {activeIndex === index && (
+                  <p className="text-sm text-prigray text-center">
+                    {member.position}
+                  </p>
+                )}
+              </div>
             </div>
           ))}
         </div>

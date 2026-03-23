@@ -17,7 +17,7 @@ const Card_Img = ({
     <div className="bg-white p-2 rounded-xl">
       <img src={image} alt="phone" className="w-full rounded-[12px]" />
       <div className="p-4 flex flex-col gap-4">
-        <Header_Text text={title} type="cardhead" style="font-semibold" />
+        <Header_Text text={title} type="cardhead" style="font-semibold capitalize" />
         <div className="flex gap-4">
           {tags.slice(0, 3).map((tag, index) => (
             <div

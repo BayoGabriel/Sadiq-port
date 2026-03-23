@@ -15,14 +15,14 @@ const Work_List = ({ activeTab }: WorkListProps) => {
   return (
     <section className="containerclass py-20">
       <div className="grid gap-6 md:grid-cols-2">
-        {filtered.map((item) => (
+        {filtered.map((item, index) => (
           <Link
             to={`/work/${item.id}`}
-            key={item.id}
+            key={index}
             className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/30 rounded-xl"
             aria-label={`Open case study: ${item.title}`}
           >
-            <Card_Img title={item.title} tags={item.tags} />
+            <Card_Img title={item.id} image={item.image} tags={item.tags} />
           </Link>
         ))}
       </div>
