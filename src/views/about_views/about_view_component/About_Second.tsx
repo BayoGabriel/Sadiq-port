@@ -1,5 +1,6 @@
 import { Phone } from "../../../assets/images";
 import Full_Text from "../../../components/Full_Text";
+import Lazy_Image from "../../../components/Lazy_Image";
 
 const About_Second = () => {
   return (
@@ -39,9 +40,10 @@ const About_Second = () => {
             ))}
           </div>
           <div className="w-[32%] h-auto">
-            <img
+            <Lazy_Image
               src={Phone}
               alt=""
+              wrapperClassName="w-full h-full rounded-xl"
               className="w-full h-full block object-cover rounded-xl"
             />
           </div>

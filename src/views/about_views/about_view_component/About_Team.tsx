@@ -1,30 +1,51 @@
 import { useState } from "react";
-import { Sadiq, Vicki, Sadiq2, Gabriel } from "../../../assets/images";
+import { Sadiq, Vicki, Sadiq2, Gabriel, Team1, Team2, Team3, Team4 } from "../../../assets/images";
 import Full_Text from "../../../components/Full_Text";
+import Lazy_Image from "../../../components/Lazy_Image";
 
 const About_Team = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const team = [
     {
-      name: "Sadiq",
+      name: "Abubakar Sadiq Abdulazeez",
       position: "CEO/Product Designer",
       image: Sadiq,
     },
     {
-      name: "Sadiq",
+      name: "Rasheedah Ayobola Akanbi",
       position: "Project Manager",
       image: Sadiq2,
     },
     {
-      name: "Vicki",
+      name: "Gabriel Bayode",
+      position: "Software Engineer & Infra/Devops",
+      image: Gabriel,
+    },
+    {
+      name: "Victoria Okonnah",
       position: "Software Engineer",
       image: Vicki,
     },
     {
-      name: "Gabriel",
-      position: "Software Engineer & Infra/Devops",
-      image: Gabriel,
+      name: "",
+      position: "Sales Manager",
+      image: Team4,
+    },
+    {
+      name: "",
+      position: "SEO specialist",
+      image: Team2,
+    },
+    {
+      name: "",
+      position: "QA Engineer",
+      image: Team3,
+    },
+    {
+      name: "",
+      position: "Software Engineer",
+      image: Team1,
     },
   ];
 
@@ -45,7 +66,6 @@ const About_Team = () => {
           }}
         />
 
-        {/* GRID */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 items-stretch">
           {team.map((member, index) => (
             <div
@@ -56,19 +76,21 @@ const About_Team = () => {
               }
             >
               <div className="relative flex-1 overflow-hidden rounded-lg">
-                <img
+                <Lazy_Image
                   src={member.image}
                   alt={member.name}
+                  wrapperClassName="w-full h-full"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
 
                 <div
-                  className={`absolute inset-0 bg-black/60 flex items-center justify-center text-white text-center px-4 transition-opacity duration-300 ${
+                  className={`absolute inset-0 bg-black/60 flex flex-col gap-3 items-center justify-center text-white text-center px-4 transition-opacity duration-300 ${
                     activeIndex === index
                       ? "opacity-100"
                       : "opacity-0 group-hover:opacity-100"
                   }`}
                 >
+                  <p className="text-sm font-medium">{member.name}</p>
                   <p className="text-sm font-medium">{member.position}</p>
                 </div>
               </div>

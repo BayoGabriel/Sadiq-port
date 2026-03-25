@@ -1,11 +1,19 @@
 import { RectBg } from "../assets/images";
 import Full_Text from "./Full_Text";
+import Lazy_Image from "./Lazy_Image";
 
 const Sub_Footer = () => {
   return (
     <section className="bg-white py-20 md:py-28 relative">
       <div className="absolute inset-0 h-full w-full">
-        <img src={RectBg} alt="" className="w-full h-full" />
+        <Lazy_Image
+          src={RectBg}
+          alt=""
+          eager
+          fetchPriority="high"
+          wrapperClassName="w-full h-full"
+          className="w-full h-full"
+        />
       </div>
       <div className="containerclass">
         <Full_Text

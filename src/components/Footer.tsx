@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo2 from "../assets/svgs/Logo2";
 import { LogoText } from "../assets/images";
+import Lazy_Image from "./Lazy_Image";
 
 const Footer = () => {
   const footerData = [
@@ -99,7 +100,12 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <img src={LogoText} alt="" className="w-full" />
+        <Lazy_Image
+          src={LogoText}
+          alt=""
+          wrapperClassName="w-full"
+          className="w-full"
+        />
 
         <div className="flex justify-between text-darkgray">
           <p>© 2025 Novure. All rights reserved.</p>

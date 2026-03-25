@@ -1,4 +1,5 @@
 import { Sadiq } from "../../../assets/images";
+import Lazy_Image from "../../../components/Lazy_Image";
 
 const Home_About = () => {
   return (
@@ -64,9 +65,10 @@ const Home_About = () => {
 
             <div className="flex items-center gap-4">
               <div className="h-12 w-12 rounded-full bg-black overflow-hidden">
-                <img
+                <Lazy_Image
                   src={Sadiq}
                   alt=""
+                  wrapperClassName="h-full w-full"
                   className="h-full w-full object-cover"
                 />
               </div>
@@ -80,7 +82,12 @@ const Home_About = () => {
           </div>
 
           <div className="bg-white border border-bd2 rounded-[24px] overflow-hidden">
-            <img src={Sadiq} alt="" className="h-full w-full object-cover" />
+            <Lazy_Image
+              src={Sadiq}
+              alt=""
+              wrapperClassName="h-full w-full"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
 

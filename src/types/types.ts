@@ -35,6 +35,7 @@ export interface IBtn {
   style: string;
   color?: string;
   show_icon?: boolean;
+  onClick?: () => void;
 }
 
 export interface IDoubleBtn {

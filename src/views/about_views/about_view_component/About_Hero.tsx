@@ -1,5 +1,6 @@
 import { Phone } from "../../../assets/images";
 import Full_Text from "../../../components/Full_Text";
+import Lazy_Image from "../../../components/Lazy_Image";
 
 const About_Hero = () => {
   return (
@@ -39,9 +40,12 @@ const About_Hero = () => {
         </div>
 
         <div>
-          <img
+          <Lazy_Image
             src={Phone}
             alt=""
+            eager
+            fetchPriority="high"
+            wrapperClassName="max-h-100 w-full rounded-xl"
             className="max-h-100 w-full object-cover rounded-xl"
           />
         </div>

@@ -1,8 +1,18 @@
-import { Bravoo_App, Bravoo_Web, Phone,  Loda, Currencys, Ecom } from "../../../assets/images";
+import {
+  Bravoo_App,
+  Bravoo_Web,
+  Phone,
+  Loda,
+  Currencys,
+  Ecom,
+} from "../../../assets/images";
+import Button from "../../../components/Button";
 import Card_Img from "../../../components/Card_Img";
 import Full_Text from "../../../components/Full_Text";
+import { useNavigate } from "react-router-dom";
 
 const Home_Trusted = () => {
+  const navigate = useNavigate();
   const jobs = [
     {
       title: "Currencys",
@@ -53,6 +63,13 @@ const Home_Trusted = () => {
             <Card_Img key={index} {...job} />
           ))}
         </div>
+        <Button
+          text="View all work"
+          style="bg-linear-to-tr mx-auto mt-10 shadow-2xl from-gradient1 to-gradient2 text-white"
+          color="#ffffff"
+          show_icon={false}
+          onClick={() => navigate("/work")}
+        />
       </div>
     </section>
   );

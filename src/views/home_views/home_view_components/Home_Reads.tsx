@@ -1,6 +1,7 @@
 import { Blog1, Blog2, Blog3 } from "../../../assets/images";
 import Button from "../../../components/Button";
 import Full_Text from "../../../components/Full_Text";
+import Lazy_Image from "../../../components/Lazy_Image";
 
 type ReadCard = {
   tag: string;
@@ -68,9 +69,10 @@ const Home_Reads = () => {
                 index === 0 ? "lg:col-span-2" : "lg:col-span-1"
               }`}
             >
-              <img
+              <Lazy_Image
                 src={card.image}
                 alt={card.imageAlt}
+                wrapperClassName="w-full"
                 className="w-full object-cover"
               />
 

@@ -2,6 +2,7 @@ import { Phone } from "../../../assets/images";
 import Full_Text from "../../../components/Full_Text";
 import Paragraph from "../../../components/Paragraph";
 import type { WorkItem } from "../../../data/work";
+import Lazy_Image from "../../../components/Lazy_Image";
 
 type PerWorkDetailsProps = {
   workItem: WorkItem | undefined;
@@ -74,9 +75,10 @@ const Per_Work_Details = ({ workItem }: PerWorkDetailsProps) => {
       </div>
 
       <div className="bg-white p-2 rounded-xl mt-12">
-        <img
+        <Lazy_Image
           src={Phone}
           alt=""
+          wrapperClassName="w-full rounded-xl"
           className="w-full object-cover rounded-xl max-h-130 block"
         />
       </div>

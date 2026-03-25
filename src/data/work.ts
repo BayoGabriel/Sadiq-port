@@ -1,4 +1,14 @@
-import { Bravoo_App, Ecom, LodaWork, Npf, Npf1 } from "../assets/images";
+import {
+  Bravoo_App,
+  Bravoo_Web,
+  Currencys,
+  Ecom,
+  LodaWork,
+  Maab,
+  Npf,
+  Npf1,
+  Phone,
+} from "../assets/images";
 
 export type WorkCategory = "Mobile" | "Website" | "WebApp";
 
@@ -88,6 +98,44 @@ export const workItems: WorkItem[] = [
   },
   {
     id: "Bravoo",
+    image: Bravoo_Web,
+    category: "Mobile",
+    title:
+      "Bravoo – A mobile-first productivity Fin-tech app with futuristic features.",
+    description:
+      "Bravoo is a mobile payment and financial services app designed to make everyday digital transactions easier and more versatile. It offers features like sending and receiving money, paying bills, buying airtime/data, and more without needing traditional bank transfers. It provides virtual cards (USD/Naira) for global online payments — helpful especially when traditional bank cards don’t work for international purchases. Users can also access high-yield savings options, currency swaps, and sometimes loans depending on eligibility. The app aims for a smooth experience with cashbacks on some transactions and minimal fees.",
+    client: "BoldSwitch",
+    date: "February 2024",
+    industry: "C to C",
+    timeline: "24 weeks",
+    tags: [
+      "Product Strategy",
+      "UX/UI Design",
+      "MVP Launch & Handoff",
+      "Mobile Development",
+    ],
+    whatWeDidTitle:
+      "We delivered full UX/UI design and cross-platform development",
+    whatWeDid: [
+      "Designed clean, intuitive mobile flows for time tracking, tasks, and daily agendas",
+      "Built a lightweight cross-platform app using React Native",
+      "Integrated calendar sync, notifications, and offline mode",
+      "Created a modular design system for future scale",
+      "Helped define the product scope to avoid overbuilding",
+    ],
+    testimonial: {
+      quote:
+        "Novure felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+      name: "Lina M",
+      role: "Head of Product at HiTech",
+    },
+    resultsTag: "RESULTS",
+    resultsTitle:
+      "HiTech’s MVP was fully designed, developed, and launched in under 8 weeks — hitting 1,000+ users within the first two weeks post-launch. With a 4.8 App Store rating and a scalable foundation, the product proved both its usability and market potential from day one.",
+  },
+
+  {
+    id: "Bravoo",
     image: Bravoo_App,
     category: "Mobile",
     title:
@@ -123,7 +171,98 @@ export const workItems: WorkItem[] = [
     resultsTitle:
       "HiTech’s MVP was fully designed, developed, and launched in under 8 weeks — hitting 1,000+ users within the first two weeks post-launch. With a 4.8 App Store rating and a scalable foundation, the product proved both its usability and market potential from day one.",
   },
-{
+  {
+    id: "Currencys",
+    image: Phone,
+    category: "Mobile",
+    title:
+      "Bravoo – A mobile-first productivity Fin-tech app with futuristic features.",
+    description:
+      "Bravoo is a mobile payment and financial services app designed to make everyday digital transactions easier and more versatile. It offers features like sending and receiving money, paying bills, buying airtime/data, and more without needing traditional bank transfers. It provides virtual cards (USD/Naira) for global online payments — helpful especially when traditional bank cards don’t work for international purchases. Users can also access high-yield savings options, currency swaps, and sometimes loans depending on eligibility. The app aims for a smooth experience with cashbacks on some transactions and minimal fees.",
+    client: "BoldSwitch",
+    date: "February 2024",
+    industry: "C to C",
+    timeline: "24 weeks",
+    tags: ["UX/UI Design", "Mobile Development"],
+    whatWeDidTitle:
+      "We delivered full UX/UI design and cross-platform development",
+    whatWeDid: [
+      "Designed clean, intuitive mobile flows for time tracking, tasks, and daily agendas",
+      "Built a lightweight cross-platform app using React Native",
+      "Integrated calendar sync, notifications, and offline mode",
+      "Created a modular design system for future scale",
+      "Helped define the product scope to avoid overbuilding",
+    ],
+    testimonial: {
+      quote:
+        "Novure felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+      name: "Lina M",
+      role: "Head of Product at HiTech",
+    },
+    resultsTag: "RESULTS",
+    resultsTitle:
+      "HiTech’s MVP was fully designed, developed, and launched in under 8 weeks — hitting 1,000+ users within the first two weeks post-launch. With a 4.8 App Store rating and a scalable foundation, the product proved both its usability and market potential from day one.",
+  },
+   {
+    id: "Currencys",
+    image: Currencys,
+    category: "Mobile",
+    title:
+      "Bravoo – A mobile-first productivity Fin-tech app with futuristic features.",
+    description:
+      "Bravoo is a mobile payment and financial services app designed to make everyday digital transactions easier and more versatile. It offers features like sending and receiving money, paying bills, buying airtime/data, and more without needing traditional bank transfers. It provides virtual cards (USD/Naira) for global online payments — helpful especially when traditional bank cards don’t work for international purchases. Users can also access high-yield savings options, currency swaps, and sometimes loans depending on eligibility. The app aims for a smooth experience with cashbacks on some transactions and minimal fees.",
+    client: "BoldSwitch",
+    date: "February 2024",
+    industry: "C to C",
+    timeline: "24 weeks",
+    tags: [
+      "UX/UI Design",
+      "Mobile Development",
+    ],
+    whatWeDidTitle:
+      "We delivered full UX/UI design and cross-platform development",
+    whatWeDid: [
+      "Designed clean, intuitive mobile flows for time tracking, tasks, and daily agendas",
+      "Built a lightweight cross-platform app using React Native",
+      "Integrated calendar sync, notifications, and offline mode",
+      "Created a modular design system for future scale",
+      "Helped define the product scope to avoid overbuilding",
+    ],
+    testimonial: {
+      quote:
+        "Novure felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+      name: "Lina M",
+      role: "Head of Product at HiTech",
+    },
+    resultsTag: "RESULTS",
+    resultsTitle:
+      "HiTech’s MVP was fully designed, developed, and launched in under 8 weeks — hitting 1,000+ users within the first two weeks post-launch. With a 4.8 App Store rating and a scalable foundation, the product proved both its usability and market potential from day one.",
+  },
+  {
+    id: "MAAB Luxury",
+    image: Maab,
+    category: "WebApp",
+    title: "Currency – A modern multi-currency wallet experience.",
+    description:
+      "A product-focused web app designed to help users manage and swap currencies with clarity, speed, and trust.",
+    client: "Npf",
+    date: "January 2024",
+    industry: "Fintech",
+    timeline: "10 weeks",
+    tags: ["Product Strategy", "UX/UI Design", "Web development"],
+    whatWeDidTitle: "We shipped a scalable web app built for growth",
+    whatWeDid: [
+      "Designed a clean UI system with reusable components",
+      "Built core wallet flows and transaction history",
+      "Implemented responsive layouts and accessible interactions",
+      "Optimized performance and loading states",
+      "Prepared handoff docs and component guidelines",
+    ],
+    resultsTag: "RESULTS",
+    resultsTitle:
+      "A fast, clean product experience that improved signups and reduced user drop-off across key onboarding steps.",
+  },
+  {
     id: "e-commerce",
     image: Ecom,
     category: "WebApp",

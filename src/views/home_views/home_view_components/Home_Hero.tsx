@@ -3,6 +3,7 @@ import Tool from "../../../assets/svgs/Tool";
 import Code from "../../../assets/svgs/Code";
 import Double_Btn from "../../../components/Double_Btn";
 import { Video } from "../../../assets/images";
+import Lazy_Image from "../../../components/Lazy_Image";
 
 const Home_Hero = () => {
   return (
@@ -53,7 +54,14 @@ const Home_Hero = () => {
           style="w-fit mt-8"
         />
         <div className="rounded-[24px] shadow-2xl video mt-10 w-full md:w-[70%] h-auto mx-auto">
-          <img src={Video} alt="video" className="w-full rounded-[24px]" />
+          <Lazy_Image
+            src={Video}
+            alt="video"
+            eager
+            fetchPriority="high"
+            wrapperClassName="rounded-[24px]"
+            className="w-full rounded-[24px]"
+          />
         </div>
       </div>
     </section>

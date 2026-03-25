@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Lina } from "../../../assets/images";
 import Full_Text from "../../../components/Full_Text";
+import Lazy_Image from "../../../components/Lazy_Image";
 
 type Testimonial = {
   quote: string;
@@ -132,9 +133,10 @@ const Home_Testimonials = () => {
                       </p>
 
                       <div className="flex items-center gap-3 mt-6 justify-start">
-                        <img
+                        <Lazy_Image
                           src={t.avatarSrc}
                           alt={t.name}
+                          wrapperClassName="h-9 w-9 rounded-full"
                           className="h-9 w-9 rounded-full object-cover"
                         />
                         <div className="flex flex-col">
