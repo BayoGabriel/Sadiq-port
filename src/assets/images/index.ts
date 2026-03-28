@@ -24,8 +24,17 @@ import Team1 from "./team1.png";
 import Team2 from "./team2.png";
 import Team3 from "./team3.png";
 import Team4 from "./team4.png";
+import BoldApp from "./boldapp.png";
+import BoldWeb from './boldweb.png'
+import BusinessApp from './businessapp.png'
+import BusinessWeb from './businessweb.png'
+
 
 export {
+  BusinessApp,
+  BusinessWeb,
+  BoldApp,
+  BoldWeb,
   Phone,
   RectBg,
   LogoText,

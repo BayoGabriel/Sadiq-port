@@ -4,6 +4,7 @@ import Sub_Footer from "../../components/Sub_Footer";
 import Work_Hero from "./work_view_components/Work_Hero";
 import Work_List from "./work_view_components/Work_List";
 import Work_Help from "./work_view_components/Work_Help";
+import Footer from "../../components/Footer";
 
 const Work_View = () => {
   const [activeTab, setActiveTab] = useState<string>("All");
@@ -15,6 +16,7 @@ const Work_View = () => {
       <Work_List activeTab={activeTab} />
       <Work_Help />
       <Sub_Footer />
+      <Footer/>
     </>
   );
 };

@@ -108,7 +108,7 @@ const Footer = () => {
         />
 
         <div className="flex justify-between text-darkgray">
-          <p>© 2025 Novure. All rights reserved.</p>
+          <p>© 2026 De-Synexia. All rights reserved.</p>
           <div className="flex gap-6">
             <p>Privacy Policy</p>
             <p>Terms of Service</p>

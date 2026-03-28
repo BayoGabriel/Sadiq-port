@@ -17,28 +17,28 @@ const Home_Testimonials = () => {
     () => [
       {
         quote:
-          "Novure felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+          "De-Synexia felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
         name: "Lina M",
         title: "Head of Product at Verno",
         avatarSrc: Lina,
       },
       {
         quote:
-          "Novure felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+          "De-Synexia felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
         name: "Ade T",
         title: "Founder, Stead",
         avatarSrc: Lina,
       },
       {
         quote:
-          "Novure felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+          "De-Synexia felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
         name: "Mira K",
         title: "Design Lead, Sprout",
         avatarSrc: Lina,
       },
       {
         quote:
-          "Novure felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+          "De-Synexia felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
         name: "Jon P",
         title: "CTO, Northwind",
         avatarSrc: Lina,

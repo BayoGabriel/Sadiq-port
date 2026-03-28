@@ -1,6 +1,10 @@
 import {
+  BoldApp,
+  BoldWeb,
   Bravoo_App,
   Bravoo_Web,
+  BusinessApp,
+  BusinessWeb,
   Currencys,
   Ecom,
   LodaWork,
@@ -47,12 +51,7 @@ export const workItems: WorkItem[] = [
     date: "February 2024",
     industry: "C to C",
     timeline: "24 weeks",
-    tags: [
-      "Product Strategy",
-      "UX/UI Design",
-      "MVP Launch & Handoff",
-      "Mobile Development",
-    ],
+    tags: ["Mobile app", "MVP", "UX/UI Design"],
     whatWeDidTitle:
       "We delivered full UX/UI design and cross-platform development",
     whatWeDid: [
@@ -64,7 +63,7 @@ export const workItems: WorkItem[] = [
     ],
     testimonial: {
       quote:
-        "Novure felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+        "De-Synexia felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
       name: "Lina M",
       role: "Head of Product at HiTech",
     },
@@ -74,7 +73,7 @@ export const workItems: WorkItem[] = [
   },
   {
     id: "lodapoint",
-    category: "Mobile",
+    category: "Website",
     title:
       "LodaPoint – A mobile-first productivity app built for Truck, Ride, & Bike Hailing.",
     description:
@@ -83,7 +82,7 @@ export const workItems: WorkItem[] = [
     date: "March 2024",
     industry: "Mobility",
     timeline: "12 weeks",
-    tags: ["UX/UI Design", "Mobile Development", "MVP Launch & Handoff"],
+    tags: ["Webapp", "UI/UX"],
     whatWeDidTitle: "We delivered UX/UI + cross-platform build",
     whatWeDid: [
       "Designed onboarding and driver/rider flows",
@@ -97,8 +96,8 @@ export const workItems: WorkItem[] = [
       "A launch-ready MVP with smooth onboarding, clear UX, and a codebase prepared for iterative growth.",
   },
   {
-    id: "Bravoo",
-    image: Bravoo_Web,
+    id: "BoldApp",
+    image: BoldApp,
     category: "Mobile",
     title:
       "Bravoo – A mobile-first productivity Fin-tech app with futuristic features.",
@@ -108,12 +107,7 @@ export const workItems: WorkItem[] = [
     date: "February 2024",
     industry: "C to C",
     timeline: "24 weeks",
-    tags: [
-      "Product Strategy",
-      "UX/UI Design",
-      "MVP Launch & Handoff",
-      "Mobile Development",
-    ],
+    tags: ["Mobile App", "UX/UI Design"],
     whatWeDidTitle:
       "We delivered full UX/UI design and cross-platform development",
     whatWeDid: [
@@ -125,7 +119,136 @@ export const workItems: WorkItem[] = [
     ],
     testimonial: {
       quote:
-        "Novure felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+        "De-Synexia felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+      name: "Lina M",
+      role: "Head of Product at HiTech",
+    },
+    resultsTag: "RESULTS",
+    resultsTitle:
+      "HiTech’s MVP was fully designed, developed, and launched in under 8 weeks — hitting 1,000+ users within the first two weeks post-launch. With a 4.8 App Store rating and a scalable foundation, the product proved both its usability and market potential from day one.",
+  },
+  {
+    id: "BoldApp",
+    image: BoldWeb,
+    category: "Website",
+    title:
+      "Bravoo – A mobile-first productivity Fin-tech app with futuristic features.",
+    description:
+      "Bravoo is a mobile payment and financial services app designed to make everyday digital transactions easier and more versatile. It offers features like sending and receiving money, paying bills, buying airtime/data, and more without needing traditional bank transfers. It provides virtual cards (USD/Naira) for global online payments — helpful especially when traditional bank cards don’t work for international purchases. Users can also access high-yield savings options, currency swaps, and sometimes loans depending on eligibility. The app aims for a smooth experience with cashbacks on some transactions and minimal fees.",
+    client: "BoldSwitch",
+    date: "February 2024",
+    industry: "C to C",
+    timeline: "24 weeks",
+    tags: ["Website", "MVP", "UX/UI Design"],
+    whatWeDidTitle:
+      "We delivered full UX/UI design and cross-platform development",
+    whatWeDid: [
+      "Designed clean, intuitive mobile flows for time tracking, tasks, and daily agendas",
+      "Built a lightweight cross-platform app using React Native",
+      "Integrated calendar sync, notifications, and offline mode",
+      "Created a modular design system for future scale",
+      "Helped define the product scope to avoid overbuilding",
+    ],
+    testimonial: {
+      quote:
+        "De-Synexia felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+      name: "Lina M",
+      role: "Head of Product at HiTech",
+    },
+    resultsTag: "RESULTS",
+    resultsTitle:
+      "HiTech’s MVP was fully designed, developed, and launched in under 8 weeks — hitting 1,000+ users within the first two weeks post-launch. With a 4.8 App Store rating and a scalable foundation, the product proved both its usability and market potential from day one.",
+  },
+
+  {
+    id: "Bold Business",
+    image: BusinessWeb,
+    category: "Website",
+    title:
+      "Bravoo – A mobile-first productivity Fin-tech app with futuristic features.",
+    description:
+      "Bravoo is a mobile payment and financial services app designed to make everyday digital transactions easier and more versatile. It offers features like sending and receiving money, paying bills, buying airtime/data, and more without needing traditional bank transfers. It provides virtual cards (USD/Naira) for global online payments — helpful especially when traditional bank cards don’t work for international purchases. Users can also access high-yield savings options, currency swaps, and sometimes loans depending on eligibility. The app aims for a smooth experience with cashbacks on some transactions and minimal fees.",
+    client: "BoldSwitch",
+    date: "February 2024",
+    industry: "C to C",
+    timeline: "24 weeks",
+    tags: ["Website", "MVP", "UX/UI Design"],
+    whatWeDidTitle:
+      "We delivered full UX/UI design and cross-platform development",
+    whatWeDid: [
+      "Designed clean, intuitive mobile flows for time tracking, tasks, and daily agendas",
+      "Built a lightweight cross-platform app using React Native",
+      "Integrated calendar sync, notifications, and offline mode",
+      "Created a modular design system for future scale",
+      "Helped define the product scope to avoid overbuilding",
+    ],
+    testimonial: {
+      quote:
+        "De-Synexia felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+      name: "Lina M",
+      role: "Head of Product at HiTech",
+    },
+    resultsTag: "RESULTS",
+    resultsTitle:
+      "HiTech’s MVP was fully designed, developed, and launched in under 8 weeks — hitting 1,000+ users within the first two weeks post-launch. With a 4.8 App Store rating and a scalable foundation, the product proved both its usability and market potential from day one.",
+  },
+  {
+    id: "Bold Business",
+    image: BusinessApp,
+    category: "Mobile",
+    title:
+      "Bravoo – A mobile-first productivity Fin-tech app with futuristic features.",
+    description:
+      "Bravoo is a mobile payment and financial services app designed to make everyday digital transactions easier and more versatile. It offers features like sending and receiving money, paying bills, buying airtime/data, and more without needing traditional bank transfers. It provides virtual cards (USD/Naira) for global online payments — helpful especially when traditional bank cards don’t work for international purchases. Users can also access high-yield savings options, currency swaps, and sometimes loans depending on eligibility. The app aims for a smooth experience with cashbacks on some transactions and minimal fees.",
+    client: "BoldSwitch",
+    date: "February 2024",
+    industry: "C to C",
+    timeline: "24 weeks",
+    tags: ["Mobile App", "UX/UI Design"],
+    whatWeDidTitle:
+      "We delivered full UX/UI design and cross-platform development",
+    whatWeDid: [
+      "Designed clean, intuitive mobile flows for time tracking, tasks, and daily agendas",
+      "Built a lightweight cross-platform app using React Native",
+      "Integrated calendar sync, notifications, and offline mode",
+      "Created a modular design system for future scale",
+      "Helped define the product scope to avoid overbuilding",
+    ],
+    testimonial: {
+      quote:
+        "De-Synexia felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+      name: "Lina M",
+      role: "Head of Product at HiTech",
+    },
+    resultsTag: "RESULTS",
+    resultsTitle:
+      "HiTech’s MVP was fully designed, developed, and launched in under 8 weeks — hitting 1,000+ users within the first two weeks post-launch. With a 4.8 App Store rating and a scalable foundation, the product proved both its usability and market potential from day one.",
+  },
+  {
+    id: "Bravoo",
+    image: Bravoo_Web,
+    category: "Website",
+    title:
+      "Bravoo – A mobile-first productivity Fin-tech app with futuristic features.",
+    description:
+      "Bravoo is a mobile payment and financial services app designed to make everyday digital transactions easier and more versatile. It offers features like sending and receiving money, paying bills, buying airtime/data, and more without needing traditional bank transfers. It provides virtual cards (USD/Naira) for global online payments — helpful especially when traditional bank cards don’t work for international purchases. Users can also access high-yield savings options, currency swaps, and sometimes loans depending on eligibility. The app aims for a smooth experience with cashbacks on some transactions and minimal fees.",
+    client: "BoldSwitch",
+    date: "February 2024",
+    industry: "C to C",
+    timeline: "24 weeks",
+    tags: ["Website", "UX/UI Design"],
+    whatWeDidTitle:
+      "We delivered full UX/UI design and cross-platform development",
+    whatWeDid: [
+      "Designed clean, intuitive mobile flows for time tracking, tasks, and daily agendas",
+      "Built a lightweight cross-platform app using React Native",
+      "Integrated calendar sync, notifications, and offline mode",
+      "Created a modular design system for future scale",
+      "Helped define the product scope to avoid overbuilding",
+    ],
+    testimonial: {
+      quote:
+        "De-Synexia felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
       name: "Lina M",
       role: "Head of Product at HiTech",
     },
@@ -146,12 +269,7 @@ export const workItems: WorkItem[] = [
     date: "February 2024",
     industry: "C to C",
     timeline: "24 weeks",
-    tags: [
-      "Product Strategy",
-      "UX/UI Design",
-      "MVP Launch & Handoff",
-      "Mobile Development",
-    ],
+    tags: ["Mobile App", "MVP", "UX/UI Design"],
     whatWeDidTitle:
       "We delivered full UX/UI design and cross-platform development",
     whatWeDid: [
@@ -163,7 +281,7 @@ export const workItems: WorkItem[] = [
     ],
     testimonial: {
       quote:
-        "Novure felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+        "De-Synexia felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
       name: "Lina M",
       role: "Head of Product at HiTech",
     },
@@ -183,7 +301,7 @@ export const workItems: WorkItem[] = [
     date: "February 2024",
     industry: "C to C",
     timeline: "24 weeks",
-    tags: ["UX/UI Design", "Mobile Development"],
+    tags: ["Mobile App", "UX/UI Design"],
     whatWeDidTitle:
       "We delivered full UX/UI design and cross-platform development",
     whatWeDid: [
@@ -195,7 +313,7 @@ export const workItems: WorkItem[] = [
     ],
     testimonial: {
       quote:
-        "Novure felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+        "De-Synexia felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
       name: "Lina M",
       role: "Head of Product at HiTech",
     },
@@ -203,10 +321,10 @@ export const workItems: WorkItem[] = [
     resultsTitle:
       "HiTech’s MVP was fully designed, developed, and launched in under 8 weeks — hitting 1,000+ users within the first two weeks post-launch. With a 4.8 App Store rating and a scalable foundation, the product proved both its usability and market potential from day one.",
   },
-   {
+  {
     id: "Currencys",
     image: Currencys,
-    category: "Mobile",
+    category: "Website",
     title:
       "Bravoo – A mobile-first productivity Fin-tech app with futuristic features.",
     description:
@@ -215,10 +333,7 @@ export const workItems: WorkItem[] = [
     date: "February 2024",
     industry: "C to C",
     timeline: "24 weeks",
-    tags: [
-      "UX/UI Design",
-      "Mobile Development",
-    ],
+    tags: ["UX/UI Design", "Website"],
     whatWeDidTitle:
       "We delivered full UX/UI design and cross-platform development",
     whatWeDid: [
@@ -230,7 +345,7 @@ export const workItems: WorkItem[] = [
     ],
     testimonial: {
       quote:
-        "Novure felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
+        "De-Synexia felt like an extension of our own team. They moved fast, challenged our thinking, and delivered a product that exceeded expectations — all under tight deadlines.",
       name: "Lina M",
       role: "Head of Product at HiTech",
     },
@@ -249,7 +364,7 @@ export const workItems: WorkItem[] = [
     date: "January 2024",
     industry: "Fintech",
     timeline: "10 weeks",
-    tags: ["Product Strategy", "UX/UI Design", "Web development"],
+    tags: ["E-Commerce", "UX/UI Design"],
     whatWeDidTitle: "We shipped a scalable web app built for growth",
     whatWeDid: [
       "Designed a clean UI system with reusable components",
@@ -273,7 +388,7 @@ export const workItems: WorkItem[] = [
     date: "January 2024",
     industry: "Fintech",
     timeline: "10 weeks",
-    tags: ["Product Strategy", "UX/UI Design", "Web development"],
+    tags: ["Marketing", "UX/UI Design"],
     whatWeDidTitle: "We shipped a scalable web app built for growth",
     whatWeDid: [
       "Designed a clean UI system with reusable components",
@@ -289,7 +404,7 @@ export const workItems: WorkItem[] = [
   {
     id: "nigerian police force",
     image: Npf1,
-    category: "Mobile",
+    category: "WebApp",
     title:
       "LodaPoint – A mobile-first productivity app built for Truck, Ride, & Bike Hailing.",
     description:
@@ -298,7 +413,7 @@ export const workItems: WorkItem[] = [
     date: "March 2024",
     industry: "Mobility",
     timeline: "12 weeks",
-    tags: ["UX/UI Design", "Mobile Development", "MVP Launch & Handoff"],
+    tags: ["Web App", "UX/UI Design"],
     whatWeDidTitle: "We delivered UX/UI + cross-platform build",
     whatWeDid: [
       "Designed onboarding and driver/rider flows",
@@ -322,7 +437,7 @@ export const workItems: WorkItem[] = [
     date: "January 2024",
     industry: "Fintech",
     timeline: "10 weeks",
-    tags: ["Product Strategy", "UX/UI Design", "Web development"],
+    tags: ["Website", "UX/UI Design"],
     whatWeDidTitle: "We shipped a scalable web app built for growth",
     whatWeDid: [
       "Designed a clean UI system with reusable components",

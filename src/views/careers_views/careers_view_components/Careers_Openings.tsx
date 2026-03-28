@@ -66,7 +66,7 @@ const Careers_Openings = () => {
                 "font-semibold leading-[4rem] md:leading-[5rem] text-[52px] md:text-[64px]",
             }}
             para={{
-              text: "At Novure, we’re always on the lookout for passionate, and driven individuals to help us deliver outstanding digital experiences.",
+              text: "At De-Synexia, we’re always on the lookout for passionate, and driven individuals to help us deliver outstanding digital experiences.",
               style: "max-w-[30rem]",
             }}
           />
@@ -77,12 +77,19 @@ const Careers_Openings = () => {
             const isOpen = openTitle === role.title;
 
             return (
-              <div key={role.title} className="border-b border-bd2 last:border-b-0">
+              <div
+                key={role.title}
+                className="border-b border-bd2 last:border-b-0"
+              >
                 <button
                   type="button"
                   className="w-full px-5 md:px-6 py-4 flex items-center justify-between"
                   aria-expanded={isOpen}
-                  onClick={() => setOpenTitle((cur) => (cur === role.title ? "" : role.title))}
+                  onClick={() =>
+                    setOpenTitle((cur) =>
+                      cur === role.title ? "" : role.title,
+                    )
+                  }
                 >
                   <p className="text-primary font-medium">{role.title}</p>
                   <span className="text-secgray">

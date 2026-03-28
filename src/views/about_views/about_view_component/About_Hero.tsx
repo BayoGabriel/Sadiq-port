@@ -15,7 +15,7 @@ const About_Hero = () => {
             style: "font-semibold  leading-[5rem]",
           }}
           para={{
-            text: "Novure is a remote digital product agency partnering with startups and tech teams to design, build, and launch scalable software. From strategy to shipped, we move fast — without cutting corners.",
+            text: "De-Synexia is a remote digital product agency partnering with startups and tech teams to design, build, and launch scalable software. From strategy to shipped, we move fast — without cutting corners.",
             style: "max-w-[30rem]  text-base text-prigray",
           }}
         />
